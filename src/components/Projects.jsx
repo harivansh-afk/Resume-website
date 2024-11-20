@@ -70,7 +70,7 @@ const Projects = () => {
         "Designed reusable components and state management, enhancing scalability and maintainability",
         "Optimized front-end performance with TypeScript and Vite, reducing build times and runtime errors"
       ],
-      github: "#", // Replace with actual GitHub link
+      github: "https://github.com/harivansh-afk/Habit-Tracker",
       demo: "#"    // Replace with actual demo link
     }
   ];
