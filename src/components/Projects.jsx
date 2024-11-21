@@ -71,7 +71,7 @@ const Projects = () => {
         "Optimized front-end performance with TypeScript and Vite, reducing build times and runtime errors"
       ],
       github: "https://github.com/harivansh-afk/Habit-Tracker",
-      demo: "#"    // Replace with actual demo link
+      demo: "https://habit-tracker-nine-zeta.vercel.app/"
     }
   ];
 
@@ -84,7 +84,7 @@ const Projects = () => {
       >
         Projects and Research Work
       </motion.h2>
-      
+
       <div className="max-w-3xl mx-auto">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
