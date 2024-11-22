@@ -71,7 +71,7 @@ const Projects = () => {
         "Optimized front-end performance with TypeScript and Vite, reducing build times and runtime errors"
       ],
       github: "https://github.com/harivansh-afk/Habit-Tracker",
-      demo: "https://habit-tracker-nine-zeta.vercel.app/"
+      demo: "https://habit-tracker-2-eta.vercel.app/"
     }
   ];
 
