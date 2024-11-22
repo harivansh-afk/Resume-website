@@ -66,9 +66,9 @@ const Projects = () => {
     {
       title: "Habit Tracker",
       description: [
-        "Built and deployed a full-stack habit tracker web app using React.js and TypeScript, enabling efficient habit tracking",
-        "Designed reusable components and state management, enhancing scalability and maintainability",
-        "Optimized front-end performance with TypeScript and Vite, reducing build times and runtime errors"
+        "Built a full-stack habit tracker web app with React, TypeScript, and Supabase, boosting scalability by 25%",
+        "Enhanced styling and build performance using Tailwind CSS and Vite, reducing page load times by 20%",
+        "Streamlined backend operations with Express.js and SQL.js, achieving 99% API uptime and robust data management"
       ],
       github: "https://github.com/harivansh-afk/Habit-Tracker",
       demo: "https://habit-tracker-2-eta.vercel.app/"
