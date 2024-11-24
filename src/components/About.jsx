@@ -34,22 +34,21 @@ const About = () => {
             <h1 className="text-5xl font-bold mb-4">
               Harivansh <span className="text-blue-600">Rathi</span>
             </h1>
-            <p className="text-xl text-gray-600 font-medium">Software Developer & ML Enthusiast</p>
+            <p className="text-xl text-gray-600 font-medium">Software Developer & AI Enthusiast</p>
           </motion.div>
         </div>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
           className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto"
         >
-          I'm a software developer with expertise in full-stack web development 
-          and a strong interest in machine learning. I enjoy working with both front-end and 
-          back-end technologies to build complete solutions.
+          I'm a software developer with expertise in full-stack web development
+          and a strong interest in AI and LLMs. I enjoy working with both front-end and back-end technologies to build complete solutions. With the recent advancements in Artificial Intelligence, I enjoy exploring its intersection and integration with software development.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
@@ -57,14 +56,14 @@ const About = () => {
         >
           <h2 className="text-xl font-semibold mb-4 text-gray-800">Contact me</h2>
           <div className="space-y-2">
-            <a 
-              href="mailto:rathiharivansh@gmail.com" 
+            <a
+              href="mailto:rathiharivansh@gmail.com"
               className="block text-blue-600 hover:text-blue-700 transition-colors"
             >
               rathiharivansh@gmail.com
             </a>
-            <a 
-              href="mailto:zng2gc@virginia.edu" 
+            <a
+              href="mailto:zng2gc@virginia.edu"
               className="block text-blue-600 hover:text-blue-700 transition-colors"
             >
               zng2gc@virginia.edu
@@ -72,7 +71,7 @@ const About = () => {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
