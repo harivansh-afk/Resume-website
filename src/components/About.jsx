@@ -1,102 +1,69 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const About = () => {
+function About() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      id="about"
-      className="min-h-screen pt-20 flex items-center bg-gradient-to-b from-white to-gray-50"
-    >
-      <div className="max-w-4xl mx-auto text-center px-4">
-        <div className="mb-8">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="relative w-48 h-48 mx-auto mb-6"
-          >
-            <div className="absolute inset-0 bg-blue-600 rounded-full opacity-10 blur-lg transform scale-110"></div>
-            <img
-              src="/img/profile.jpg"
-              alt="Harivansh Rathi"
-              className="w-full h-full rounded-full object-cover shadow-xl ring-4 ring-blue-600 ring-opacity-50"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <h1 className="text-5xl font-bold mb-4">
-              Harivansh <span className="text-blue-600">Rathi</span>
-            </h1>
-            <p className="text-xl text-gray-600 font-medium">Software Developer & AI Enthusiast</p>
-          </motion.div>
-        </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto"
-        >
-          I'm a software developer with expertise in full-stack web development
-          and a strong interest in AI and LLMs. I enjoy working with both front-end and back-end technologies to build complete solutions. With the recent advancements in Artificial Intelligence, I enjoy exploring its intersection and integration with software development.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="mb-8 bg-white p-6 rounded-xl shadow-lg"
-        >
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">Contact me</h2>
-          <div className="space-y-2">
+    <div className="relative overflow-hidden">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+            Hi, I'm <span className="text-blue-600">Harivansh Rathi</span>
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-600 mb-8">
+            Full Stack Developer & Software Engineer
+          </p>
+          <p className="text-gray-600 max-w-2xl mb-8">
+            I'm passionate about building exceptional digital experiences that make a difference.
+            With expertise in both frontend and backend development, I create scalable and efficient solutions
+            that solve real-world problems.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <a
-              href="mailto:rathiharivansh@gmail.com"
-              className="block text-blue-600 hover:text-blue-700 transition-colors"
+              href="https://github.com/harivansh-afk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
             >
-              rathiharivansh@gmail.com
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+              </svg>
+              GitHub
             </a>
             <a
-              href="mailto:zng2gc@virginia.edu"
-              className="block text-blue-600 hover:text-blue-700 transition-colors"
+              href="https://linkedin.com/in/harivansh-rathi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
-              zng2gc@virginia.edu
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://docs.google.com/document/d/1TKbtqYinjRNFZiZNbxEwRTz5QDiZ5mOk/edit?usp=sharing&ouid=104313709347999918268&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Resume
             </a>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="flex justify-center space-x-6"
-        >
-          <a
-            href="https://www.linkedin.com/in/harivansh-rathi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-4xl text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/harivansh-afk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-4xl text-gray-600 hover:text-gray-800 transition-colors transform hover:scale-110"
-          >
-            <FaGithub />
-          </a>
-        </motion.div>
+        </div>
+        <div className="relative w-64 h-64 lg:w-96 lg:h-96">
+          <div className="absolute inset-0 -inset-x-4 -inset-y-4 bg-gradient-to-r from-blue-100 via-purple-50 to-blue-50 rounded-full opacity-75 blur-2xl" />
+          <div className="absolute inset-0 bg-white/50 rounded-full backdrop-blur-sm" />
+          <img
+            src="/img/profile.jpg"
+            alt="Harivansh Rathi"
+            className="relative z-10 w-full h-full object-cover rounded-full ring-2 ring-gray-100 shadow-lg"
+          />
+        </div>
       </div>
-    </motion.section>
+    </div>
   );
-};
+}
 
 export default About;

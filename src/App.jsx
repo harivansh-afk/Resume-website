@@ -8,15 +8,28 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="bg-gray-50">
+    <div className="min-h-screen bg-background">
+      <div className="fixed inset-0 bg-grid -z-10" aria-hidden="true" />
       <Navbar />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <About />
-        <Experience />
-        <Education />
-        <Skills />
-        <Projects />
-      </div>
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="space-y-16">
+          <section id="about" className="fade-in pt-20">
+            <About />
+          </section>
+          <section id="experience" className="fade-in">
+            <Experience />
+          </section>
+          <section id="projects" className="fade-in">
+            <Projects />
+          </section>
+          <section id="education" className="fade-in">
+            <Education />
+          </section>
+          <section id="skills" className="fade-in">
+            <Skills />
+          </section>
+        </div>
+      </main>
     </div>
   );
 }

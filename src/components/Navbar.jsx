@@ -1,73 +1,43 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const navItems = ['About', 'Experience', 'Education', 'Skills', 'Projects'];
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="bg-blue-600 fixed w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+    }`}>
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex-shrink-0 text-white font-bold text-xl"
-          >
-            HR
-          </motion.div>
-          
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-white hover:bg-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
-          
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:bg-blue-500 p-2 rounded-md"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+          <a href="#" className="text-xl font-semibold tracking-tight hover:text-gray-600 transition-colors">
+            Harivansh
+          </a>
 
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-white hover:bg-blue-500 block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
+          <div className="hidden sm:flex items-center space-x-8">
+            <a href="#about" className="nav-link">About</a>
+            <a href="#experience" className="nav-link">Experience</a>
+            <a href="#education" className="nav-link">Education</a>
+            <a href="#skills" className="nav-link">Skills</a>
+            <a href="#projects" className="nav-link">Projects</a>
           </div>
+
+          <button className="sm:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-      )}
-    </nav>
+      </nav>
+    </header>
   );
-};
+}
 
 export default Navbar;
