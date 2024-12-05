@@ -72,6 +72,16 @@ const Projects = () => {
       ],
       github: "https://github.com/harivansh-afk/Habit-Tracker",
       demo: "https://habit-tracker-2-eta.vercel.app/"
+    },
+    {
+      title: "Guide To Austen",
+      description: [
+        "Developed an interactive web application offering a comprehensive guide to weddings, inspired by Jane Austen's works",
+        "Designed a dynamic timeline of wedding traditions using TypeScript and D3.js for smooth user interaction",
+        "Built custom visualizations for character relationship analysis and wedding etiquettes, optimizing for performance with Vite"
+      ],
+      github: "https://github.com/harivansh-afk/ENGL-Final-Project",
+      demo: "https://guidetoausten.netlify.app/"
     }
   ];
 
