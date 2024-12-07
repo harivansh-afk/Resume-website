@@ -17,7 +17,7 @@ const Education = () => {
       >
         Education
       </motion.h2>
-      
+
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 20 }}
@@ -33,13 +33,12 @@ const Education = () => {
         </div>
         <div className="text-gray-600 mb-4">Expected May 2026</div>
         <div className="mb-2">
-          <span className="font-semibold">GPA:</span> 3.7/4.0
+          <span className="font-semibold">Cumulative GPA:</span> 3.55/4.0
         </div>
         <div>
           <span className="font-semibold">Relevant Coursework:</span>
           <p className="text-gray-700">
-            Data structures and algorithms, Computer systems and organization, 
-            Software development essentials
+            Data structures and algo, Computer systems and organization, Software dev essentials
           </p>
         </div>
       </motion.div>

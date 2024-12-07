@@ -33,31 +33,31 @@ const Experience = () => {
     {
       title: "Front End Development Intern",
       company: "UNIKOVE TECHNOLOGIES",
-      date: "Mar 2022 - Apr 2022",
+      date: "June 2024 - August 2024",
       description: [
-        "Utilized JavaScript and React.js to refine UX design elements, ensuring seamless functionality and user-centric interfaces",
+        "Utilized JavaScript and React.js to refine UX design elements, ensuring seamless functionality and integration",
         "Collaborated with the design team to conceptualize and implement new web interfaces, improving user experience",
         "Optimized front-end code by reducing JavaScript file sizes by 20%, improving website load time"
       ]
     },
     {
-      title: "Backend Development Intern",
-      company: "Moglix",
-      date: "May 2023 - Jul 2023",
+      title: "Software Development Intern",
+      company: "MOGLIX",
+      date: "June 2023 - August 2023",
       description: [
-        "Developed Python algorithm to optimize routes for transportation of materials, increasing time and supply chain efficiency by 20%",
+        "Developed Python algorithm to optimize transportation routes, increasing time and supply chain efficiency by 20%",
         "Developed ETL pipelines to streamline lead data processing, enabling faster outreach",
         "Automated data extraction and transformation using various libraries in Python, reducing manual workload"
       ]
     },
     {
-      title: "Mechanical Engineering Intern",
+      title: "Software Engineering Intern",
       company: "SAN AUTO",
-      date: "Dec 2021 - Jan 2022",
+      date: "June 2022 - August 2022",
       description: [
-        "Learned 3D modeling, operating AutoCAD, and managed small projects with professionals in the field",
-        "Assisted head engineer with analyzing and improving manufacturing processes for aircraft components",
-        "Acquired skills in operating and maintaining CNC machines to ensure precision in manufacturing"
+        "Implemented manufacturing data analysis tools using Excel and Python, improving reporting speed by 20%",
+        "Optimized manufacturing data storage using mySQL, improving query performance",
+        "Created React dashboards with real-time production metrics visualization, increasing ease of data access"
       ]
     }
   ];

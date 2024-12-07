@@ -2,33 +2,33 @@ import React from 'react';
 
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Programming Languages",
     skills: [
-      { name: "React", level: 90 },
-      { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 80 },
+      { name: "Python", level: 90 },
+      { name: "Java", level: 85 },
+      { name: "TypeScript", level: 85 },
       { name: "HTML/CSS", level: 90 },
-      { name: "Tailwind CSS", level: 85 },
+      { name: "C/C++", level: 80 },
     ]
   },
   {
-    title: "Backend Development",
+    title: "Frameworks",
     skills: [
+      { name: "React.js", level: 90 },
       { name: "Node.js", level: 85 },
-      { name: "Python", level: 80 },
-      { name: "Java", level: 75 },
-      { name: "SQL", level: 80 },
-      { name: "MongoDB", level: 75 },
+      { name: "Express.js", level: 85 },
+      { name: "Vite", level: 80 },
+      { name: "Next.js 14", level: 80 },
     ]
   },
   {
-    title: "Tools & Technologies",
+    title: "Tools & Databases",
     skills: [
-      { name: "Git", level: 85 },
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "Linux", level: 80 },
-      { name: "REST APIs", level: 85 },
+      { name: "Git/Github", level: 90 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "MySQL", level: 85 },
+      { name: "Supabase", level: 80 },
+      { name: "Vercel", level: 80 },
     ]
   }
 ];

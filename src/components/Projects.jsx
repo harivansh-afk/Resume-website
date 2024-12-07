@@ -76,9 +76,9 @@ const Projects = () => {
     {
       title: "Guide To Austen",
       description: [
-        "Developed an interactive web application offering a comprehensive guide to weddings, inspired by Jane Austen's works",
-        "Designed a dynamic timeline of wedding traditions using TypeScript and D3.js for smooth user interaction",
-        "Built custom visualizations for character relationship analysis and wedding etiquettes, optimizing for performance with Vite"
+        "Built a React/TypeScript app with Shadcn/UI and Tailwind, implementing lazy loading for 40% faster loads",
+        "Developed an interactive force-directed graph using D3.js for character network analysis with custom functionality",
+        "Implemented a modular component system with TypeScript interfaces achieving 95% type safety across the website"
       ],
       github: "https://github.com/harivansh-afk/ENGL-Final-Project",
       demo: "https://guidetoausten.netlify.app/"
