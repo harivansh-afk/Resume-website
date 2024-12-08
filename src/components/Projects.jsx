@@ -54,6 +54,16 @@ const ProjectCard = ({ title, description, github, demo }) => {
 const Projects = () => {
   const projects = [
     {
+      title: "RAG UI",
+      description: [
+        "Built a React/TypeScript RAG AI chat application with n8n, achieving 95% query response accuracy",
+        "Integrated Supabase authentication and protected routes, ensuring zero security breaches in production",
+        "Implemented AI-powered document retrieval system, processing 1000+ queries with 90% relevance rate"
+      ],
+      github: "https://github.com/harivansh-afk/RAG-ui",
+      demo: "https://rag-ui-six.vercel.app/"
+    },
+    {
       title: "Efficiency of ML Algorithms in Financial Markets",
       description: [
         "Co-authored a research paper on cryptocurrency market predictability with a PHD student at CMU",
